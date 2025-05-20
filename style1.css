@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    background-color: rgb(209, 137, 3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabecera .container {
+    display: flex;
+    align-items: center; /* centra verticalmente */
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+
+.link-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.link-logo .logo1 {
+    width: 65px;
+    height: 60px;
+}
+
+.name_pag {
+    font-family: Arimo, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    margin-right:290px;
+    /* Elimina padding para alinear con el logo */
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.menu a {
+    font-family: 'Arimo', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: rgb(20, 18, 18);
+    color: white;
+    padding: 7px 12px;
+}
+
+.carta {
+    background-color: rgb(8, 8, 8);
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: rgb(209, 137, 3);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.main {
+    background-color: rgb(8, 8, 8);
+}
+
+.log {
+    background-color: rgb(8, 8, 8);
+    padding: 10px;
+}
+
+.lacarta {
+    background-color: rgb(8, 8, 8);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.ver_carta {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+}
+
+.servicios {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+}
+
+.servicios h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row; /* Asegura que las tarjetas estén en fila */
+    justify-content: space-between; /* Espacio entre las tarjetas */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior */
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan */
+    width: 100%;
+    max-width: 1400px; /* Constrain container width */
+    margin: 0 auto; /* Centra el contenedor */
+    overflow-x: hidden; /* Agrega scroll horizontal si es necesario */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.card1, .card2, .card3 {
+    background-color: #fff;
+    display: flex; /* Cambia a flex para mayor control interno */
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    padding: 20px;
+    text-align: center;
+    flex: 0 0 auto; /* Evita que las tarjetas se redimensionen */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.ecard-container{
+    display: flex; /* alinear el contenido de la seccion al centro */
+    gap: 30px; /* espacio entre cada carta */
+    flex-wrap: wrap; 
+    justify-content: center;
+    }
+    .ecard{
+    background-color: white;
+    padding: 10px;
+    border-radius: 1rem; /* esquinas redondeadas */
+    box-shadow:  0 4px 12px rgba(black, 0, 0, 0, 0.1 );
+    width: 430px;
+    height: 590px;
+    overflow: hidden;   
+    text-align: center; /* alinear el texto al centro */
+    margin: 10px; 
+    border: 2px solid #ccc; /* borde de la carta */ 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;   /* transicion al pasar el mouse por encima de la carta */
+    
+    }
+.ecard:hover{
+     transform: scale(1.03);
+     box-shadow: 0 0 20px rgba(black, 0, 0, 0.2); /* sombra al pasar el mouse por encima de la carta */
+     border: 5px solid black; /* borde de la carta al pasar el mouse por encima de la carta */
+    }
+.ecard{
+    margin: 10px;          
+    }
+.ecard img{
+    width: 100%; /* ancho de la imagen */
+    height: auto; 
+    display: block;         
+    }
+    
+.ecard-content{
+    padding: 1rem;
+    }
+    
+.ecard h2{
+        margin: 0.5rem 0; /* espacio entre el texto y el borde de la carta */
+        font-size: 2.25rem;
+        font-weight: bold;
+    }
+    
+    .ecard p{
+    font-size: 1.25rem;
+    color: rgb(137, 124, 124);
+    margin-bottom: 1rem;
+    
+    }
+    
+    .ecard .carrito{
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ;  
+    text-align: center; /* alinear el texto al centro */
+    margin-left: 125px; /* espacio entre el texto y el borde de la carta */
+    
+    }
+.ecard .carrito:hover{
+    background-color: #77808b;        
+}
